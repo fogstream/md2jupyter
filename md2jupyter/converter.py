@@ -6,7 +6,7 @@ import shutil
 import click
 import nbformat as nbformat
 
-from exporters import jupyter, slides
+from .exporters import jupyter, slides
 
 HTML_RENDERER_REL_PATH = 'html_renderer'
 HTML_RENDERER_ABS_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), HTML_RENDERER_REL_PATH)

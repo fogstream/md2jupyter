@@ -1,0 +1,1 @@
+recursive-include md2jupyter/html_renderer *
