@@ -1,7 +1,11 @@
 import sys
 
-from pip.req import parse_requirements
 from setuptools import setup, find_packages
+
+try:
+    from pip.req import parse_requirements
+except ImportError:
+    from pip._internal.req import parse_requirements
 
 if sys.version_info[0] < 3:
     sys.exit('Sorry, onlt Python 3 is supported')
